@@ -18,3 +18,10 @@ but the tedious task of organizing and labeling training documents has high time
 Unsupervised clustering approaches replace human involvement in this task,
 allowing for a hybrid model that inherits excellent classification performance from supervised SVM while immuneing the system to COD.
 This hybrid model offers an unsupervised classification approach that can be used in text classification applications.
+
+The paper examines hybrid classification systems, SOM-SVM and CorrCoef-SVM, to understand their algorithms, properties, and characteristics. The proposed approach is presented, describing its structure and algorithm.
+The prototype hybrid classifiers were tested using three benchmark datasets of text classification. 
+The performance of the proposed approaches was measured by obtaining the accuracy of classification tasks on each dataset with different parameters applied to the classifiers. 
+Accuracy was determined using a test dataset, which was manually examined for conformity to train data features.
+The automatically labeled data was used to train the SVM, and experiments were conducted to investigate the effects of varying the Euclidean distance threshold. 
+The results showed that different clusters produced by the SOM and CorrCoef approaches directly and significantly impacted the SVM's performance.
