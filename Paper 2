@@ -25,3 +25,18 @@ The performance of the proposed approaches was measured by obtaining the accurac
 Accuracy was determined using a test dataset, which was manually examined for conformity to train data features.
 The automatically labeled data was used to train the SVM, and experiments were conducted to investigate the effects of varying the Euclidean distance threshold. 
 The results showed that different clusters produced by the SOM and CorrCoef approaches directly and significantly impacted the SVM's performance.
+
+
+Support vector machine (SVM) classification has been a dominant supervised machine learning technique for the past decade due to its outstanding classification accuracy. 
+Its generalization ability is attributed to the implementation of the Structural Risk Minimization (SRM) principle, 
+which focuses on finding an optimal separating hyper-plane for the lowest classification error. 
+SVM only considers support vectors in determining this hyper-plane, allowing for representation of support vectors for a set of training vectors. 
+This is illustrated with an illustration of the optimal separating hyper plane, parallel hyper planes, and support vectors in the vector space.
+
+
+
+
+
+
+
+
