@@ -1,0 +1,20 @@
+Paper link- https://www.sciencedirect.com/science/article/pii/S0925231216305604
+
+Learning algorithms for text classification require human experts to organize and label documents. 
+This paper presents a methodology using Self-Organizing Maps (SOM) and automatic clustering using Correlation Coef.
+These clusters are used as labels for training the Support Vector Machine (SVM). Experiments are presented to verify the accuracy of the proposed scheme, 
+and results show that the proposed combination has better accuracy compared to training the learning machine using expert knowledge.
+
+In certain situations, training a text classifier using well-organized and labeled documents can be expensive due to limited expert knowledge. Unsupervised learning schemes are often used, 
+but these techniques suffer from inaccuracies due to the Curse of Dimensionality (COD), 
+which affects matching accuracy. The Euclidean distance formula's "averaging" action dilutes the effect of individual features,
+making it difficult to differentiate between classes with different dominant features. To achieve proper classification, 
+a training scheme free from expert knowledge is required, which is immune to the COD.
+
+This paper proposes a technique using unsupervised approaches like Self-Organizing Maps (SOM) and Correlation Coefficient (CorrCoef) to group unlabeled text documents and use them as a machine-labeled training set for the Support Vector Machine (SVM). 
+This method eliminates the effect of Computational Overload (COD) and the need for human experts to label all training documents. 
+SVM is widely used in text classification applications,
+but the tedious task of organizing and labeling training documents has high time and cost consumption.
+Unsupervised clustering approaches replace human involvement in this task,
+allowing for a hybrid model that inherits excellent classification performance from supervised SVM while immuneing the system to COD.
+This hybrid model offers an unsupervised classification approach that can be used in text classification applications.
