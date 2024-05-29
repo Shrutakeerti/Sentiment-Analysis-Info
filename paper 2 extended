@@ -1,0 +1,35 @@
+The methodology described in the document introduces DocSCAN, an unsupervised text classification approach based on the Semantic Clustering by Adopting Nearest-Neighbors (SCAN) algorithm. The approach leverages semantically informative vectors obtained from a pre-trained language model and applies a learnable clustering approach using neighboring data points as a weak learning signal to automatically learn topic assignments.
+
+The methodology involves several key components and algorithms:
+
+Semantic Clustering by Adopting Nearest-Neighbors (SCAN) Algorithm:
+The SCAN algorithm is the foundation of the DocSCAN approach. 
+It is based on the intuition that a data point and its nearest neighbors in a representation space often share the same class label. 
+The algorithm consists of three stages: learning representations via a self-learning task, mining nearest neighbors, 
+and fine-tuning a network on the weak signal that two neighbors share the same label.
+
+
+
+Self-learning Task and Representation Space: The methodology utilizes a self-learning task to obtain representations of documents from a pre-trained language model.
+The representations are obtained from a large pre-trained language model,
+such as SBERT (Sentence-BERT), which provides semantically informative vectors for each document.
+
+
+Clustering and Fine-tuning: The learnable clustering approach uses pairs of neighboring data points as a weak learning signal to automatically learn topic assignments.
+This involves fine-tuning networks on neighboring data points using the SCAN loss.
+
+Evaluation and Benchmarking: The methodology applies DocSCAN to three widely used and diverse text 
+classification benchmarks: The 20NewsGroup data, the AG’s news corpus, and the DBPedia ontology dataset.
+The performance of DocSCAN is compared against various unsupervised baselines and a supervised learning baseline.
+
+Ablation Experiments: The methodology includes ablation experiments to investigate the influence of different hyperparameters
+and input features on the performance of DocSCAN.
+This involves exploring the number of neighbors considered, the weight of the entropy loss, batch sizes, dropout, and number of epochs.
+
+Document Embeddings: The methodology experiments with different document embeddings, 
+including TF-IDF-weighted bag-of-n-grams, GloVe embeddings, 
+Universal Sentence Encoder (USE) embeddings, and SBERT embeddings. The performance of DocSCAN using different input features is evaluated and compared.
+
+Overall, the methodology combines the use of pre-trained language models, 
+neighbor-based clustering, and fine-tuning techniques to develop an unsupervised text classification approach.
+It leverages the strengths of deep Transformer networks and semantic representations to achieve strong performance in text classification tasks.
